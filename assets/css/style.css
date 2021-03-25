@@ -21,60 +21,77 @@ div.contenitore{
 header{
     width: 100vw;
     height: 100vh;
-    border: 3px dotted red;
 }
 div.Hei-Nav{
-    padding: 2.5rem 0;
+    position: relative;
 }
-        /* HEADER FIRST NAV  */
 
-header>.first-nav{
-    width: 100%;
-    background-color: #F4F9FD;
-    height: 15%;
-    border:1px solid black;
+div.contenuto{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 div.nav_box-left{
     float: left;
     width: 50%;
-    height: 100%;      
-}
-
-div.nav_box-left>span{
-    padding: 1rem;
-}
-
-div.nav_box-left>a{
-    text-decoration: none;
-    color:black;
+    height: 100%;     
+   
 }
 
 div.nav_box-right{
     float: left;
     width: 50%;
     height: 100%;   
-    text-align: right;
+    position: relative;
 }
-div.nav_box-right>i{
+
+div.nav_box-right>.contenuto{
+    position:absolute;
+    right:0;
+    
+}
+        /* HEADER FIRST NAV  */
+
+header>.first-nav{
+    width: 100%;
+    background-color: #F4F9FD;
+    height: 10%;
+    border-bottom: 1px solid black;
+}
+
+
+
+.first-nav div.nav_box-left>.contenuto>span{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.first-nav div.nav_box-left>.contenuto>a{
+    text-decoration: none;
+    color:black;
+}
+
+.first-nav  div.nav_box-right>.contenuto>i{
     font-size: 0.8rem;
     color: #24a4bd;
     margin-right: 1rem;
 }
-div.nav_box-right>a{
+.first-nav div.nav_box-right>.contenuto>a{
     text-decoration: none;
     
 }
-div.nav_box-right>a:first-of-type{
+.first-nav div.nav_box-right>.contenuto>a:first-of-type{
     margin-right: 1rem;
     color:#FE775A;
     border:1px solid #FE775A;
     border-radius: 5px;
     padding: 0.5rem;    
     background-color: #FAFCFE;
+    
 }
 
-div.nav_box-right>a:last-of-type{
+.first-nav div.nav_box-right>.contenuto>a:last-of-type{
     color:white;
     border:1px solid #FE775A;
     border-radius: 5px;
@@ -84,23 +101,36 @@ div.nav_box-right>a:last-of-type{
 
 
 
-
-
         /* HEADER second NAV  */
 header>.second-nav{
     width: 100%;
     background-color: #FFFFFF;
-    height: 15%;
-    border:1px solid black;
+    height: 10%;
 }
 
+.second-nav .nav_box-right a{
+    text-decoration: none;
+    color:black;
+    padding:0 0.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+        /* HEADER central NAV  */
 header>div.central-header{
     width: 100%;
     background-color: #FFF1EE;
-    height: 70%;
-    border:1px solid black;
+    height: 80%;
+    
 }
-
 
 
 
