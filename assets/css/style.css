@@ -11,14 +11,22 @@
     clear: both;
     display: table;
 }
+div.contenitore{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
 
 /* Debug style  - HEADER  */
-
 header{
     width: 100vw;
     height: 100vh;
     border: 3px dotted red;
 }
+div.Hei-Nav{
+    padding: 2.5rem 0;
+}
+        /* HEADER FIRST NAV  */
 
 header>.first-nav{
     width: 100%;
@@ -27,6 +35,58 @@ header>.first-nav{
     border:1px solid black;
 }
 
+div.nav_box-left{
+    float: left;
+    width: 50%;
+    height: 100%;      
+}
+
+div.nav_box-left>span{
+    padding: 1rem;
+}
+
+div.nav_box-left>a{
+    text-decoration: none;
+    color:black;
+}
+
+div.nav_box-right{
+    float: left;
+    width: 50%;
+    height: 100%;   
+    text-align: right;
+}
+div.nav_box-right>i{
+    font-size: 0.8rem;
+    color: #24a4bd;
+    margin-right: 1rem;
+}
+div.nav_box-right>a{
+    text-decoration: none;
+    
+}
+div.nav_box-right>a:first-of-type{
+    margin-right: 1rem;
+    color:#FE775A;
+    border:1px solid #FE775A;
+    border-radius: 5px;
+    padding: 0.5rem;    
+    background-color: #FAFCFE;
+}
+
+div.nav_box-right>a:last-of-type{
+    color:white;
+    border:1px solid #FE775A;
+    border-radius: 5px;
+    padding: 0.5rem;    
+    background-color: #FE775A;
+}
+
+
+
+
+
+        /* HEADER second NAV  */
 header>.second-nav{
     width: 100%;
     background-color: #FFFFFF;
@@ -40,6 +100,15 @@ header>div.central-header{
     height: 70%;
     border:1px solid black;
 }
+
+
+
+
+
+
+
+
+
 
 /* Debug style  - MAIN  */
 main{
@@ -71,3 +140,4 @@ footer{
     height: 100vh;
     background-color: #32495B;
 }
+
