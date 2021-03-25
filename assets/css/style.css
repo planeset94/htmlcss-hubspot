@@ -5,16 +5,28 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .clearfix::after{
     content: "";
     clear: both;
     display: table;
 }
 div.contenitore{
-    width: 80%;
+    width: 90%;
     margin: auto;
     height: 100%;
+}
+
+.h3-dim{
+    font-size: 2.8rem;
+}
+.p_normal-dim{
+    font-size: 0.95rem;
+}
+.p_small-dim{
+    font-size: 0.8rem;
 }
 
 /* Debug style  - HEADER  */
@@ -51,12 +63,21 @@ div.nav_box-right>.contenuto{
     right:0;
     
 }
+a.linka{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color:white;
+    border:1px solid #FE775A;
+    border-radius: 5px;
+    background-color: #FE775A;
+    
+}
         /* HEADER FIRST NAV  */
 
 header>.first-nav{
     width: 100%;
     background-color: #F4F9FD;
-    height: 10%;
+    height: 12%;
     border-bottom: 1px solid black;
 }
 
@@ -91,12 +112,8 @@ header>.first-nav{
     
 }
 
-.first-nav div.nav_box-right>.contenuto>a:last-of-type{
-    color:white;
-    border:1px solid #FE775A;
-    border-radius: 5px;
+.first-nav div.nav_box-right>.contenuto>a:last-of-type{    
     padding: 0.5rem;    
-    background-color: #FE775A;
 }
 
 
@@ -105,7 +122,7 @@ header>.first-nav{
 header>.second-nav{
     width: 100%;
     background-color: #FFFFFF;
-    height: 10%;
+    height: 12%;
 }
 
 .second-nav .nav_box-right a{
@@ -115,22 +132,35 @@ header>.second-nav{
 
 }
 
-
-
-
-
-
-
-
-
-
-        /* HEADER central NAV  */
+        /* HEADER ASIDE part  */
 header>div.central-header{
     width: 100%;
     background-color: #FFF1EE;
-    height: 80%;
+    height: 76%;
     
 }
+.central-header .aside-box{
+    width: 50%;
+}
+
+
+.central-header .aside-box h3{
+    padding-top:4rem;
+}
+.central-header .aside-box p{
+    padding: 2.5rem 0;
+    line-height: 1.6rem;
+}
+
+.central-header .aside-box a{
+    padding: 1rem 2rem;    
+}
+
+
+
+
+
+
 
 
 
@@ -171,3 +201,6 @@ footer{
     background-color: #32495B;
 }
 
+
+
+.central-header 
