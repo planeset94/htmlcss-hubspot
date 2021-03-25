@@ -137,8 +137,14 @@ header>div.central-header{
     width: 100%;
     background-color: #FFF1EE;
     height: 76%;
+    background-image: url(../img/jumbotron.png);
+    background-size:90%;
+    background-position: 100% -84%; 
+    background-repeat:no-repeat;
     
+
 }
+
 .central-header .aside-box{
     width: 50%;
 }
