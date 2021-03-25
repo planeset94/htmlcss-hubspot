@@ -1,0 +1,73 @@
+/* Common style  */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Debug style  - HEADER  */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    border: 3px dotted red;
+}
+
+header>.first-nav{
+    width: 100%;
+    background-color: #F4F9FD;
+    height: 15%;
+    border:1px solid black;
+}
+
+header>.second-nav{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 15%;
+    border:1px solid black;
+}
+
+header>div.central-header{
+    width: 100%;
+    background-color: #FFF1EE;
+    height: 70%;
+    border:1px solid black;
+}
+
+/* Debug style  - MAIN  */
+main{
+    width: 100vw;
+}
+
+main>.first_main-section{
+    background-color: #F4F9FD;
+    height: 100vh;
+
+}
+
+main>.second_main-section{
+    background-color: #00BAA8;
+    height: 100vh;
+
+}
+
+
+main>.third_main-section{
+    background-color: white;
+    height: 100vh;
+
+}
+
+/* Debug style  - FOOTER  */
+footer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #32495B;
+}
