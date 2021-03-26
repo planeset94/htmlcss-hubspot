@@ -52,7 +52,8 @@ div.contenitore{
 /* Debug style  - HEADER  */
 header{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 40rem;
 }
 div.Hei-Nav{
     position: relative;
@@ -183,7 +184,7 @@ header>div.central-header{
     /* background-size:90%;
     background-position: 100% -84%;  */
     background-size:95%;
-    background-position: 9rem 0.6rem;
+    background-position: 9rem -1.5rem;
     background-repeat:no-repeat;
    
     
@@ -256,7 +257,8 @@ main ul>li{
 
 main>.first_main-section{
     background-color: #F4F9FD;
-    height: 200vh;
+    /* height: 200vh; */
+    height: 80rem;
     width: 100%;
 }
                 /* First section : TOP-SUB  */
@@ -416,7 +418,8 @@ main>.first_main-section{
 main>.second_main-section{
     background-color: #00BAA8;
 
-    height: 100vh;
+    /* height: 100vh; */
+    height: 40rem;
 
 }
 
@@ -433,14 +436,16 @@ main>.second_main-section{
      /* MAIN: Third section  */
 main>.third_main-section{
     background-color: white;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 40rem;
 
 }
 
 /* Debug style  - FOOTER  */
 footer{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 40rem;
     background-color: #32495B;
 }
 
