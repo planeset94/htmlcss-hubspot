@@ -175,7 +175,7 @@ header>.second-nav{
         /* HEADER central part  */
 
 header>div.central-header{
-    /* background-image: linear-gradient(180deg, #FFF4EF 0%, rgba(255, 244, 239, 0) 100%); */
+    background-image: linear-gradient(180deg, #FFF4EF 0%, rgba(255, 244, 239, 0) 100%);
     width: 100%;
     height: 76%;
     background-color: #FFF1EE;
@@ -264,13 +264,13 @@ main>.first_main-section{
     margin-top: 5rem;
     height: 25%;
     background-color: white;
-    padding-top: 4rem;
     border-radius: 5px;
 
 
 }
 .middle-sub .mb-left, .middle-sub .mb-right{
     float:left;
+    padding-top: 4rem;
 } 
 
 .middle-sub .mb-left{
@@ -279,17 +279,17 @@ main>.first_main-section{
     position: relative;
 }
 
-/* .middle-sub .mb-left>img{
-
-} */
+.middle-sub .mb-left>img{
+    width: 40%;
+    padding-left 1rem;
+}
 .middle-sub .mb-left>a{
     position: absolute;
     left:50%;
     transform: translateX(-50%);
-    top:8rem;
-    padding: 1.5rem 2.5rem;
-
-   
+    top:11.5rem;
+    padding: 1.2rem 2.5rem;
+  
 }
 
 
@@ -297,19 +297,58 @@ main>.first_main-section{
     width: 70%;
     text-align: left;
     padding-left: 2rem;
+    position: relative;
 }
 
 .middle-sub .mb-right>p{
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 1.5rem 0;
     width: 80%;
 }
 
-.middle-sub .mb-right>li{
-    display: inline-block;
+.middle-sub .mb-right>h6::after{
+    content: "";
+    display: block;
+    width: 26rem;
+    height: 1.15px;
+    background-color: #33475c;
+    /* margin: -0.8rem 0 0 11rem; */
+    position:absolute;
+    left:32.5%;
+    bottom: 22%;
+
 }
 
 
 
+.middle-sub .mb-right>ul{
+    margin-top: 1.5rem;
+}
+.middle-sub .mb-right>ul>li{
+    font-size: 0.95rem;
+    color:#33475c;
+    line-height: 1.6rem;
+    display: inline-block;
+    list-style: none;
+    
+}
+
+.middle-sub .mb-right>ul>li>i{
+    color:white;
+    font-size: 0.7rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#fa785a;
+    margin: 0 1rem;
+   
+}
+
+.middle-sub .mb-right>ul>li.primo>i{
+    margin-left: 0;
+}
 
 
 
