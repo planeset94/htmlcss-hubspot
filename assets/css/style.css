@@ -18,7 +18,6 @@ div.contenitore{
     width: 90%;
     margin: auto;
     height: 100%;
-   
  
 }
 
@@ -26,13 +25,28 @@ div.contenitore{
     font-size: 2.8rem;
     color:#33475c;
 }
+.h4-dim{
+    font-size: 2rem;
+    color:#33475c;
+}
+.h5-dim{
+    color:#33475c;
+    font-size: 1.4rem;
+}
+.h6-dim{
+    color:#33475c;
+    font-size: 1rem;
+}
+
 .p_normal-dim{
     font-size: 0.95rem;
-    color:#617280;
+    color:#33475c;
+    line-height: 1.6rem;
 }
 .p_small-dim{
     font-size: 0.8rem;
-    color:#617280;
+    color:#33475c;
+    line-height: 1.6rem;
 }
 
 /* Debug style  - HEADER  */
@@ -64,19 +78,6 @@ div.nav_box-right{
     position: relative;
 }
 
-.second-nav #nav_2_left{
-    float: left;
-    width: 30%;
-    height: 100%; 
-}
-
-
-.second-nav #nav_2_right{
-    float: left;
-    width: 70%;
-    height: 100%; 
-    
-}
 
 div.nav_box-right>.contenuto{
     position:absolute;
@@ -147,6 +148,20 @@ header>.second-nav{
     height: 12%;
 }
 
+
+.second-nav #nav_2_left{
+    float: left;
+    width: 30%;
+    height: 100%; 
+}
+
+
+.second-nav #nav_2_right{
+    float: left;
+    width: 70%;
+    height: 100%; 
+    
+}
 .second-nav .nav_box-right a{
     text-decoration: none;
     color:#617280;
@@ -162,7 +177,7 @@ header>.second-nav{
 header>div.central-header{
     /* background-image: linear-gradient(180deg, #FFF4EF 0%, rgba(255, 244, 239, 0) 100%); */
     width: 100%;
-    height: 100%;
+    height: 76%;
     background-color: #FFF1EE;
     background-image: url(../img/jumbotron.png);
     /* background-size:90%;
@@ -170,6 +185,7 @@ header>div.central-header{
     background-size:95%;
     background-position: 9rem 0.6rem;
     background-repeat:no-repeat;
+   
     
 }
 
@@ -185,7 +201,7 @@ header>div.central-header{
 }
 .central-header .aside-box p{
     padding: 2.5rem 0;
-    line-height: 1.6rem;
+    
    
 }
 
@@ -195,18 +211,110 @@ header>div.central-header{
 }
 
 
+div.central-header::after{
+    display: inline-block;
+    content:"";
+    width: 100%;
+    height: 12%;
+    background-color:#AFEBE4;
+    border-top: 3px solid #33475c;
+    border-bottom: 3px solid #33475c; 
+}
+
 
 
 
 /* Debug style  - MAIN  */
 
+/* main{
+    width: 100%;
+    height: 400vh;
+} */
+
+        /* MAIN: First section  */
+
 main>.first_main-section{
     background-color: #F4F9FD;
     height: 200vh;
     width: 100%;
-    
+}
+                /* First section : TOP-SUB  */
+
+.first_main-section .top-sub{
+    width: 100%;
+    margin:auto;
+    height: 25%;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.top-sub>img{
+    height: 70%;
+}
+.top-sub>p{
+    padding-top: 1rem;
+    width: 70%;
+    margin:auto;
+}
+
+                /* First section : MIDDLE-SUB  */
+
+.first_main-section .middle-sub{
+    width: 100%;
+    margin-top: 5rem;
+    height: 25%;
+    background-color: white;
+    padding-top: 4rem;
+    border-radius: 5px;
+
 
 }
+.middle-sub .mb-left, .middle-sub .mb-right{
+    float:left;
+} 
+
+.middle-sub .mb-left{
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+/* .middle-sub .mb-left>img{
+
+} */
+.middle-sub .mb-left>a{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:8rem;
+    padding: 1.5rem 2.5rem;
+
+   
+}
+
+
+.middle-sub .mb-right{
+    width: 70%;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.middle-sub .mb-right>p{
+    padding: 2rem 0 1rem 0;
+    width: 80%;
+}
+
+.middle-sub .mb-right>li{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+     /* MAIN: Second section  */
 
 main>.second_main-section{
     background-color: #00BAA8;
@@ -215,6 +323,16 @@ main>.second_main-section{
 }
 
 
+
+
+
+
+
+
+
+
+
+     /* MAIN: Third section  */
 main>.third_main-section{
     background-color: white;
     height: 100vh;
