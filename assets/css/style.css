@@ -231,6 +231,27 @@ div.central-header::after{
     height: 400vh;
 } */
 
+main ul>li>i{
+    color:white;
+    font-size: 0.7rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#fa785a;
+    padding:0.1rem;
+}
+
+main ul>li{
+    font-size: 0.95rem;
+    color:#33475c;
+    line-height: 1.6rem;
+    list-style: none;
+    
+}
+
         /* MAIN: First section  */
 
 main>.first_main-section{
@@ -261,7 +282,7 @@ main>.first_main-section{
 
 .first_main-section .middle-sub{
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 6rem;
     height: 25%;
     background-color: white;
     border-radius: 5px;
@@ -292,7 +313,6 @@ main>.first_main-section{
   
 }
 
-
 .middle-sub .mb-right{
     width: 70%;
     text-align: left;
@@ -318,8 +338,6 @@ main>.first_main-section{
 
 }
 
-
-
 .middle-sub .mb-right>ul{
     margin-top: 1.5rem;
 }
@@ -331,19 +349,8 @@ main>.first_main-section{
     list-style: none;
     
 }
-
 .middle-sub .mb-right>ul>li>i{
-    color:white;
-    font-size: 0.7rem;
-    width: 0.9rem;
-    height: 0.9rem;
-    line-height: 0.9rem;
-    vertical-align: middle;
-    text-align: center;
-    border-radius: 50%;
-    background-color:#fa785a;
     margin: 0 1rem;
-   
 }
 
 .middle-sub .mb-right>ul>li.primo>i{
@@ -351,12 +358,66 @@ main>.first_main-section{
 }
 
 
+                /* First section : BOTTOM-SUB  */
+                
+.first_main-section .bottom-sub{
+    width: 100%;
+    height: 50%;
+    border: 3px dottet orange;
+    background-color: white;
+    border-radius: 5px;
+    margin-top:3rem;
+}
+
+.first_main-section .bottom-sub .square{
+    float: left;
+    height: 70%;
+    width: calc(100%/3 - 10rem/3);
+    margin-right: 5rem;
+    text-align: center;
+    border: 1px solid #33475c;
+    padding:1rem 2rem 2rem 2rem;
+}
+
+.first_main-section .bottom-sub .square:last-of-type{
+    margin-right: 0;
+}
+
+
+
+.square div.photo{
+    width: 100%;
+    height: 7rem;
+}
+
+.square div.photo>img{
+    width: auto;
+    height: 100%;
+    
+}
+
+
+.square p{
+    padding: 1.5rem 0 3rem 0;
+}
+.square h6{
+    padding-bottom: 1rem;
+}
+
+.square ul{
+    text-align: left;
+}
+.square ul>li{
+    line-height: 1.1rem;
+}
+
 
 
      /* MAIN: Second section  */
 
 main>.second_main-section{
     background-color: #00BAA8;
+
     height: 100vh;
 
 }
@@ -380,7 +441,7 @@ main>.third_main-section{
 
 /* Debug style  - FOOTER  */
 footer{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #32495B;
 }
