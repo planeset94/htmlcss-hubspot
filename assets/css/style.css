@@ -18,21 +18,26 @@ div.contenitore{
     width: 90%;
     margin: auto;
     height: 100%;
+   
+ 
 }
 
 .h3-dim{
     font-size: 2.8rem;
+    color:#33475c;
 }
 .p_normal-dim{
     font-size: 0.95rem;
+    color:#617280;
 }
 .p_small-dim{
     font-size: 0.8rem;
+    color:#617280;
 }
 
 /* Debug style  - HEADER  */
 header{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 div.Hei-Nav{
@@ -59,10 +64,23 @@ div.nav_box-right{
     position: relative;
 }
 
+.second-nav #nav_2_left{
+    float: left;
+    width: 30%;
+    height: 100%; 
+}
+
+
+.second-nav #nav_2_right{
+    float: left;
+    width: 70%;
+    height: 100%; 
+    
+}
+
 div.nav_box-right>.contenuto{
     position:absolute;
-    right:0;
-    
+    right:0; 
 }
 a.linka{
     font-size: 0.9rem;
@@ -131,40 +149,49 @@ header>.second-nav{
 
 .second-nav .nav_box-right a{
     text-decoration: none;
-    color:black;
+    color:#617280;
     padding:0 0.5rem;
-
 }
 
-        /* HEADER ASIDE part  */
+.second-nav .nav_box-right i{
+    color:#617280;
+}
+
+        /* HEADER central part  */
+
 header>div.central-header{
-    background-image: linear-gradient(180deg, #FFF4EF 0%, rgba(255, 244, 239, 0) 100%);
+    /* background-image: linear-gradient(180deg, #FFF4EF 0%, rgba(255, 244, 239, 0) 100%); */
     width: 100%;
+    height: 100%;
     background-color: #FFF1EE;
-    height: 76%;
     background-image: url(../img/jumbotron.png);
-    background-size:90%;
-    background-position: 100% -84%; 
+    /* background-size:90%;
+    background-position: 100% -84%;  */
+    background-size:95%;
+    background-position: 9rem 0.6rem;
     background-repeat:no-repeat;
     
-
 }
+
+             /* ASIDE part  */
 
 .central-header .aside-box{
     width: 50%;
 }
 
-
 .central-header .aside-box h3{
     padding-top:4rem;
+  
 }
 .central-header .aside-box p{
     padding: 2.5rem 0;
     line-height: 1.6rem;
+   
 }
 
 .central-header .aside-box a{
-    padding: 1rem 2rem;    
+    padding: 1rem 2rem;  
+    color:white;
 }
 
 
@@ -172,14 +199,12 @@ header>div.central-header{
 
 
 /* Debug style  - MAIN  */
-/* main{
-    width: 100vw;
-} */
 
 main>.first_main-section{
     background-color: #F4F9FD;
     height: 200vh;
-    border: 1px solid black;
+    width: 100%;
+    
 
 }
 
@@ -204,5 +229,3 @@ footer{
 }
 
 
-
-.central-header 
