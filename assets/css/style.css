@@ -258,7 +258,7 @@ main ul>li{
 main>.first_main-section{
     background-color: #F4F9FD;
     /* height: 200vh; */
-    height: 80rem;
+    height: 85rem;
     width: 100%;
 }
                 /* First section : TOP-SUB  */
@@ -364,19 +364,20 @@ main>.first_main-section{
     width: 100%;
     height: 50%;
     border: 3px dottet orange;
-    background-color: white;
     border-radius: 5px;
     margin-top:3rem;
 }
 
 .first_main-section .bottom-sub .square{
     float: left;
-    height: 70%;
-    width: calc(100%/3 - 10rem/3);
-    margin-right: 5rem;
+    /* height: 70%; */
+    width: calc(100%/3 - 6rem/3);
+    margin-right: 3rem;
     text-align: center;
-    border: 1px solid #33475c;
-    padding:1rem 2rem 2rem 2rem;
+    padding:1rem 2rem 2.5rem 2rem;
+    background-color: white;
+    border-radius: 5px;
+    /* position:relative; */
 }
 
 .first_main-section .bottom-sub .square:last-of-type{
@@ -393,23 +394,66 @@ main>.first_main-section{
 .square div.photo>img{
     width: auto;
     height: 100%;
+    position: relative;
     
 }
 
 
 .square p{
     padding: 1.5rem 0 3rem 0;
+    position: relative;
 }
+
+/* .square p::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1.3px;
+    background-color: #33475c;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+} */
+
+
 .square h6{
     padding-bottom: 1rem;
+  
 }
+
+
+
+div.sq-b{
+width: 100%;
+margin-top: 0.5rem;
+border-top: 1px solid #33475c;
+padding-top:2rem;
+
+
+}
+
+
+
+
 
 .square ul{
     text-align: left;
+    padding:0.8rem 0 4rem 0;
 }
 .square ul>li{
-    line-height: 1.1rem;
+    line-height: 1.2rem;
 }
+
+.square ul>li>i{
+    margin-right: 0.7rem;
+}
+.square a{
+    padding: 1.2rem 2.5rem;
+    text-align: center;
+}
+
 
 
 
