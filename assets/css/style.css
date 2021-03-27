@@ -18,6 +18,7 @@ div.contenitore{
     width: 90%;
     margin: auto;
     height: 100%;
+    position:relative;
  
 }
 
@@ -31,11 +32,11 @@ div.contenitore{
 }
 .h5-dim{
     color:#33475c;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .h6-dim{
     color:#33475c;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .p_normal-dim{
@@ -257,8 +258,6 @@ main ul>li{
 
 main>.first_main-section{
     background-color: #F4F9FD;
-    /* height: 200vh; */
-    height: 85rem;
     width: 100%;
 }
                 /* First section : TOP-SUB  */
@@ -271,7 +270,8 @@ main>.first_main-section{
 }
 
 .top-sub>img{
-    height: 50%;
+    height: 12rem;
+    min-height: 5rem;
 }
 .top-sub>p{
     padding-top: 1rem;
@@ -283,8 +283,10 @@ main>.first_main-section{
 
 .first_main-section .middle-sub{
     width: 100%;
-    height: 25%;
+    /* height: 25%; */
     background-color: white;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
     border-radius: 5px;
 
 
@@ -331,7 +333,6 @@ main>.first_main-section{
     width: 26rem;
     height: 1.15px;
     background-color: #33475c;
-    /* margin: -0.8rem 0 0 11rem; */
     position:absolute;
     left:32.5%;
     bottom: 22%;
@@ -362,10 +363,9 @@ main>.first_main-section{
                 
 .first_main-section .bottom-sub{
     width: 100%;
-    height: 50%;
     border: 3px dottet orange;
     border-radius: 5px;
-    margin-top:3rem;
+    margin:3rem 0;
 }
 
 .first_main-section .bottom-sub .square{
@@ -377,7 +377,7 @@ main>.first_main-section{
     padding:1rem 2rem 2.5rem 2rem;
     background-color: white;
     border-radius: 5px;
-    /* position:relative; */
+   
 }
 
 .first_main-section .bottom-sub .square:last-of-type{
@@ -404,20 +404,6 @@ main>.first_main-section{
     position: relative;
 }
 
-/* .square p::after{
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 1.3px;
-    background-color: #33475c;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%);
-   
-} */
-
-
 .square h6{
     padding-bottom: 1rem;
   
@@ -427,16 +413,10 @@ main>.first_main-section{
 
 div.sq-b{
 width: 100%;
-margin-top: 0.5rem;
+margin-top: 1rem;
 border-top: 1px solid #33475c;
-padding-top:2rem;
-
-
+padding-top:2.5rem;
 }
-
-
-
-
 
 .square ul{
     text-align: left;
@@ -460,14 +440,67 @@ padding-top:2rem;
      /* MAIN: Second section  */
 
 main>.second_main-section{
-    background-color: #00BAA8;
+    background-color: #00B5AD;
+ 
+}
 
-    /* height: 100vh; */
-    height: 40rem;
+            /* 2° SECTION: TOP SUB  */
 
+
+.second_main-section .sec-top-sub{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    display: table;
+}
+
+.sec-top-sub h4, .sec-top-sub p  {
+   vertical-align: middle;
+   color:white;
+}
+
+.sec-top-sub h4{
+    padding: 3rem 0 2rem 0;
+}
+
+            /* 2° SECTION: MIDDLE SUB  */
+
+.second_main-section .sec-bottom-sub {
+    width: 100%;
+    height: 70%;
+    padding: 4rem 0;
+}
+
+.sec-bottom-sub .box{
+    float: left;
+    height: 10rem;
+    width: 25%;
+    border: 1px solid white;
 }
 
 
+.sec-bottom-sub .up{
+    border-top:none;
+    border-bottom: none;
+}
+
+.sec-bottom-sub .down{
+    border-bottom:none;
+}
+.sec-bottom-sub .up.box:first-of-type{
+    border-left: none;
+}
+.up.box + .down.box{
+    border-left: none;
+}
+
+
+.sec-bottom-sub .up {
+    border-right: none;
+}
+.sec-bottom-sub .down {
+    border-right: none;
+}
 
 
 
