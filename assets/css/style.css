@@ -536,7 +536,7 @@ main>.second_main-section{
 main>.third_main-section{
     background-color: white;
     /* height: 100vh; */
-    height: 40rem;
+    height: 43rem;
 
 }
 
@@ -563,45 +563,57 @@ main>.third_main-section{
 }
 
 
-
 .third_main-section .t-top-sub div.right-box{
     width: 60%;
-    transform: translate(20%,60%);
-
-
-       
+    transform: translate(20%,70%);     
 }
 
 .t-top-sub div.right-box .photo{
-float:left;
-width: 25%;
-height: 2rem;
+    float:left;
+    width: calc(25% - 6rem/4);
+    height: 2.3rem;
+    margin-right:1.5rem;
 }
-.t-top-sub div.right-box .photo.bottom{
-    margin-top: 1rem;
-}
+
 .t-top-sub div.right-box .photo img{
-    height: 50%;
-    width: auto;
-}
-
-
-.t-top-sub div.right-box .photo img [alt~="Doord"]{
+    max-width: 80%;
     height: 100%;
+    object-fit: contain;
 }
 
+.t-top-sub div.right-box .photo.down{
+    margin-top: 1.5rem;
+}
 
 
 
 .third_main-section .t-bottom-sub div.left-box{
     width: 40%;
+    margin-top:6rem;
+ 
 }
+
+.third_main-section .t-bottom-sub div.left-box p{
+    padding:2.8rem 0 3.5rem 0;
+}
+
+.third_main-section .t-bottom-sub div.left-box a{
+    padding: 1rem 2rem;  
+    color:white;
+    
+}
+
+
 
 .third_main-section .t-bottom-sub div.right-box{
     width: 60%;
+    padding-top:4rem;
+    text-align: right; 
 }
 
-
+.t-bottom-sub div.right-box img{
+    width: 45%;
+}
 
 
 
