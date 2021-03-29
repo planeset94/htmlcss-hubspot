@@ -57,7 +57,7 @@ div.contenitore{
     line-height: 1.6rem;
 }
 
-/* Debug style  - HEADER  */
+/* - HEADER  */
 header{
     width: 100%;
     /* height: 100vh; */
@@ -99,6 +99,7 @@ a.linka{
     border:1px solid #FE775A;
     border-radius: 5px;
     background-color: #FE775A;
+    
     
 }
         /* HEADER FIRST NAV  */
@@ -218,13 +219,12 @@ header>div.central-header{
     padding: 1rem 2rem;  
     color:white;
 }
+/* ------SEPARATORE--------- */
 
-
-div.central-header::after{
-    display: inline-block;
+div.separatore{
+    display: block;
     content:"";
-    width: 100%;
-    height: 12%;
+    height: 5rem;
     background-color:#AFEBE4;
     border-top: 3px solid #33475c;
     border-bottom: 3px solid #33475c; 
@@ -234,11 +234,6 @@ div.central-header::after{
 
 
 /*  MAIN  */
-
-main{
-    padding-top:100px;
-    background-color:#F4F9FD;
-}
 
 main ul>li>i{
     color:white;
@@ -275,10 +270,12 @@ main>.first_main-section{
     height: 25%;
     text-align: center;
 }
-
-.top-sub>img{
+.top-sub>.cube{
+    padding-top: 2rem;
     height: 12rem;
-    min-height: 5rem;
+ }
+.top-sub img{
+    height: 100%;
 }
 .top-sub>p{
     padding-top: 1rem;
@@ -314,11 +311,11 @@ main>.first_main-section{
     padding-left 1rem;
 }
 .middle-sub .mb-left>a{
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    top:11.5rem;
-    padding: 1.2rem 2.5rem;
+    display: block;
+    width: 60%;
+    margin-left: 30%;
+    padding: 1rem;
+    margin-top: 2.5rem;
   
 }
 
@@ -372,14 +369,15 @@ main>.first_main-section{
     width: 100%;
     border: 3px dottet orange;
     border-radius: 5px;
-    margin:3rem 0;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .first_main-section .bottom-sub .square{
     float: left;
     /* height: 70%; */
-    width: calc(100%/3 - 10.5rem/3);
-    margin-right: 3.5rem;
+    width: calc(100%/3 - 8rem/3);
+    margin-right: 4rem;
     text-align: center;
     padding:1rem 2rem 2rem 2rem;
     background-color: white;
@@ -599,14 +597,14 @@ main>.third_main-section{
 }
 
 .t-bottom-sub div.right-box img{
-    width: 45%;
+    width: 50%;
 }
 
 /* - FOOTER  */
 footer{
     width: 100%;
     /* height: 100vh; */
-    height: 40rem;
+   padding-bottom: 1rem;
     background-color: #32495B;
 }
             /* - FOOTER: 1° Section  */
