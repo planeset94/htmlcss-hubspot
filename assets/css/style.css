@@ -109,6 +109,10 @@ header>.first-nav{
     background-color: #F4F9FD;
     height: 12%;
     border-bottom: 1px solid black;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
 }
 
 .first-nav div.nav_box-left>.contenuto>a{
