@@ -15,7 +15,7 @@ body{
     display: table;
 }
 div.contenitore{
-    width: 90%;
+    width: 70%;
     margin: auto;
     height: 100%;
     position:relative;
@@ -40,7 +40,12 @@ div.contenitore{
     color:#33475c;
     font-size: 1.1rem;
 }
+.p_big-dim{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: bolder;
 
+}
 .p_normal-dim{
     font-size: 0.95rem;
     color:#33475c;
@@ -228,7 +233,7 @@ div.central-header::after{
 
 
 
-/* Debug style  - MAIN  */
+/*  MAIN  */
 
 main{
     padding-top:100px;
@@ -332,11 +337,11 @@ main>.first_main-section{
 .middle-sub .mb-right>h6::after{
     content: "";
     display: block;
-    width: 26rem;
+    width: 50%;
     height: 1.15px;
     background-color: #33475c;
     position:absolute;
-    left:32.5%;
+    left:40%;
     bottom: 22%;
 
 }
@@ -373,10 +378,10 @@ main>.first_main-section{
 .first_main-section .bottom-sub .square{
     float: left;
     /* height: 70%; */
-    width: calc(100%/3 - 6rem/3);
-    margin-right: 3rem;
+    width: calc(100%/3 - 10.5rem/3);
+    margin-right: 3.5rem;
     text-align: center;
-    padding:1rem 2rem 2.5rem 2rem;
+    padding:1rem 2rem 2rem 2rem;
     background-color: white;
     border-radius: 5px;
    
@@ -542,39 +547,29 @@ main>.third_main-section{
 
             /* 3° Section - TOP Sub  */
 .third_main-section div.left-box, .third_main-section div.right-box{
-    float:left;
-   
-    
+    float:left;  
 }
-
 .t-top-sub  div.left-box{
     width: 25%;
     /* position: relative; */
 }
-
 .t-top-sub div.left-box .left-content{
     position:relative;
-    left:20%;
- 
+    left:20%; 
 }
-
 .t-top-sub div.left-box .left-content h3{
     padding: 3rem 0 1.5rem 0;
 }
-
-
 .third_main-section .t-top-sub div.right-box{
     width: 60%;
     transform: translate(20%,70%);     
 }
-
 .t-top-sub div.right-box .photo{
     float:left;
     width: calc(25% - 6rem/4);
     height: 2.3rem;
     margin-right:1.5rem;
 }
-
 .t-top-sub div.right-box .photo img{
     max-width: 80%;
     height: 100%;
@@ -584,27 +579,19 @@ main>.third_main-section{
 .t-top-sub div.right-box .photo.down{
     margin-top: 1.5rem;
 }
-
-
-
 .third_main-section .t-bottom-sub div.left-box{
     width: 40%;
     margin-top:6rem;
- 
 }
-
-.third_main-section .t-bottom-sub div.left-box p{
-    padding:2.8rem 0 3.5rem 0;
+.third_main-section .t-bottom-sub div.left-box .p_normal-dim{
+    padding-top:2.8rem;
 }
-
 .third_main-section .t-bottom-sub div.left-box a{
+    display: inline-block;
     padding: 1rem 2rem;  
-    color:white;
-    
+    color:white;    
+    margin: 2rem 0;
 }
-
-
-
 .third_main-section .t-bottom-sub div.right-box{
     width: 60%;
     padding-top:4rem;
@@ -615,17 +602,75 @@ main>.third_main-section{
     width: 45%;
 }
 
-
-
-
-
-
-/* Debug style  - FOOTER  */
+/* - FOOTER  */
 footer{
     width: 100%;
     /* height: 100vh; */
     height: 40rem;
     background-color: #32495B;
 }
+            /* - FOOTER: 1° Section  */
+
+.first_footer-sct .ft-boxe{
+    float: left;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    width: calc(25% - 3rem/4);
+}
+
+.first_footer-sct .ft-boxe:last-of-type{
+    margin-right: 0; 
+}
 
 
+.first_footer-sct .ft-boxe .p_big-dim{
+    color:white;
+    padding-bottom: 1.5rem;
+    
+}
+
+.first_footer-sct .ft-boxe .p_normal-dim{
+    color:#c9d6e1;
+    padding-bottom: 0.8rem;
+}
+
+.first_footer-sct .ft-boxe>a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #32495B;
+    background-color: #c9d6e1;
+    border: none;
+    padding: 0.7rem 0;
+}
+
+
+        /* - FOOTER: 2° Section  */
+
+.second_footer-sct .lenguages{
+    width: 100%;
+    padding:1rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.lenguages a{
+    font-size: 1rem;
+    text-decoration: none;
+    color:#c9d6e1;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+        /* - FOOTER: 3° Section  */
+
+.third_footer-sct .ft.contenitore{
+    margin-top: 1rem;
+    border:1px solid red;
+}
