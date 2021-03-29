@@ -635,13 +635,18 @@ footer{
 }
 
 .first_footer-sct .ft-boxe>a{
-    display: inline-block;
-    width: 100%;
+    display:block;
+    width: 90%;
     text-align: center;
-    color: #32495B;
-    background-color: #c9d6e1;
+    color: #32495b;
+    background-color: #dadee0;
     border: none;
     padding: 0.7rem 0;
+    margin-bottom: 1rem;
+}
+.first_footer-sct  i{
+    color:white;
+    padding-right: 1.4rem;
 }
 
 
@@ -671,6 +676,31 @@ footer{
         /* - FOOTER: 3° Section  */
 
 .third_footer-sct .ft.contenitore{
-    margin-top: 1rem;
-    border:1px solid red;
+    margin-top: 2rem;
 }
+
+.privacy{
+float: right;
+}
+
+.ft-logo{
+    float:left;
+}
+.ft-logo>img{
+    filter: opacity(50%);
+}
+.ft-logo span{
+    display: block;
+    color:white;
+    font-size: 1rem;
+    padding-top:0.3rem;
+
+}
+
+.privacy span{
+    padding-right: 1rem;
+    color:#c9d6e1;
+    font-size: 1rem;
+  
+}
+
