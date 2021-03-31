@@ -60,15 +60,6 @@ div.contenitore{
 header{
     width: 100%;
 }
-div.Hei-Nav{
-    position: relative;
-}
-
-div.contenuto{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-}
 
 div.nav_box-left{
     float: left;
@@ -84,11 +75,11 @@ div.nav_box-right{
     position: relative;
 }
 
-
-div.nav_box-right>.contenuto{
-    position:absolute;
-    right:0; 
+.contenuto{
+    height: 100%;
+    line-height: 80px;
 }
+
 a.linka{
     font-size: 0.9rem;
     text-decoration: none;
@@ -101,12 +92,12 @@ a.linka{
 }
         /* HEADER FIRST NAV  */
 
-header>.first-nav{
+.first-nav{
     width: 100%;
     background-color: #F4F9FD;
     height: 5rem;
     border-bottom: 1px solid black;
-    position: fixed;
+    position: sticky;
     top:0;
     left: 0;
     z-index: 2;
@@ -115,6 +106,7 @@ header>.first-nav{
 .first-nav div.nav_box-left>.contenuto>a{
     text-decoration: none;
     color:black;
+    vertical-align: middle;
 }
 
 .first-nav div.nav_box-left>.contenuto>a:last-of-type{
@@ -130,10 +122,16 @@ header>.first-nav{
     font-size: 0.8rem;
     color: #24a4bd;
     margin-right: 1rem;
+    vertical-align: middle;
   
+}
+.first-nav div.nav_box-right>.contenuto{
+    float: right;
 }
 .first-nav div.nav_box-right>.contenuto>a{
     text-decoration: none;
+    vertical-align: middle;
+
     
 }
 .first-nav div.nav_box-right>.contenuto>a:first-of-type{
@@ -157,7 +155,6 @@ header>.second-nav{
     width: 100%;
     background-color: #FFFFFF;
     height: 5rem;
-    margin-top: 5rem;
 }
 
 
@@ -167,24 +164,27 @@ header>.second-nav{
     height: 100%; 
 }
 
+.second-nav #nav_2_left img{
+    vertical-align: middle;
+}
 
 .second-nav #nav_2_right{
-    float: left;
+    float: right;
     width: 70%;
     height: 100%; 
-
-    
+    text-align: right;    
 }
+
 .second-nav .nav_box-right a{
     text-decoration: none;
     color:#33475c;
     padding:0 0.5rem;
-    /* position: relative; */
-    /* display: inline-block; */
+    vertical-align: middle;
 }
 
 .second-nav .nav_box-right i{
     color:#617280;
+    vertical-align: middle;
 }
             /* ----BONUS---- */
       
@@ -251,15 +251,16 @@ header>.second-nav{
 
 .content-partners {
     position: absolute;
-    right: -6.6rem;
-    top:2rem;
+    right: -4.8rem;
+    top: 4rem;
     min-width: 45rem;
     display: none;
     z-index: 1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
     background-color: white;
     border: 1px solid #c9d6e1;
     border-radius: 5px;
+    text-align: left;
   
 }
         
@@ -289,31 +290,32 @@ header>.second-nav{
 
         /* BONUS ABOUT        */
 div.triangolo-about{
-        width: 20px;
-        height: 20px;
-        background-color:white;
-        position:absolute;
-        top: -0.62rem;
-        right: 1.6rem;
-        z-index: 2;
-        display: block;
-        transform: rotate(45deg);
-        border: 1px solid #c9d6e1;
-        border-right: none;
-        border-bottom: none;
-        } 
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    position:absolute;
+    top: -0.62rem;
+    right: 1.6rem;
+    z-index: 2;
+    display: block;
+    transform: rotate(45deg);
+    border: 1px solid #c9d6e1;
+    border-right: none;
+    border-bottom: none;
+    } 
 
 .content-about {
-        position: absolute;
-        right: -2rem;
-        top:2rem;
-        min-width: 30rem;
-        display: none;
-        z-index: 1;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        background-color: white;
-        border: 1px solid #c9d6e1;
-        border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    min-width: 30rem;
+    display: none;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    border: 1px solid #c9d6e1;
+    border-radius: 5px;
+    text-align: left;
         
     }
 
