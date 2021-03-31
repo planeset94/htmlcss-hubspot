@@ -249,7 +249,7 @@ header>.second-nav{
 
 }
 
-.content-partners {
+.content.partners {
     position: absolute;
     right: -4.8rem;
     top: 4rem;
@@ -264,23 +264,23 @@ header>.second-nav{
   
 }
         
-        .content-partners  .box-partners{
+        .content.partners  .box-partners{
             float:left;
             width: 50%;
             padding: 2rem 2rem 1rem 2rem;
           
         }
-        .content-partners  .box-partners:last-of-type{
+        .content.partners  .box-partners:last-of-type{
             margin-right: 0;
         }
-        .content-partners   .box-partners li{
+        .content.partners   .box-partners li{
             padding-bottom: 0.5rem;
         }
      
-        .content-partners ul{
+        .content.partners ul{
             list-style: none;
         }
-        .dropdown.partners:hover .content-partners {
+        .dropdown.partners:hover .content.partners {
             display: block;
           }
 
@@ -304,7 +304,7 @@ div.triangolo-about{
     border-bottom: none;
     } 
 
-.content-about {
+.content.about {
     position: absolute;
     right: 0;
     top: 4rem;
@@ -319,27 +319,47 @@ div.triangolo-about{
         
     }
 
-    .content-about .box-about{
+    .content.about .box-about{
         float:left;
         margin-right: 1rem;
         width: calc(100% / 3 - 2rem/3);
         padding: 2rem 2rem 1rem 2rem;
     
     }
-    .content-about  .box-about:last-of-type{
+    .content.about  .box-about:last-of-type{
         margin-right: 0;
     }
-    .content-about  .box-about li{
+    .content.about  .box-about li{
         padding-bottom: 0.5rem;
     }
 
-    .content-about ul{
+    .content.about ul{
         list-style: none;
     }
 
-.dropdown.about:hover .content-about{
+.dropdown.about:hover .content.about{
         display: block;
     }
+
+/* ANIMAZIONE */
+
+.content{
+    animation: rotateMenu 500ms ease-in-out forwards;    
+    transform-origin: top center;
+}
+    
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg);
+    }
+    70% {
+        transform: rotateX(20deg); 
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+/* /ANIMAZIONE */
 
  /* ----/BONUS---- */
 
