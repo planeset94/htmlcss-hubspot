@@ -179,19 +179,31 @@ header>.second-nav{
     text-decoration: none;
     color:#33475c;
     padding:0 0.5rem;
-    position: relative;
-    display: inline-block;
+    /* position: relative; */
+    /* display: inline-block; */
 }
 
 .second-nav .nav_box-right i{
     color:#617280;
 }
             /* ----BONUS---- */
-            
-#nav_2_right a {
+      
+.dropdown {
  position: relative;
  display: inline-block;
+
+
  }
+ .dropdown:hover {
+    padding-bottom: 0.8rem; 
+
+   }
+ .dropdown:hover a {
+    color:red;
+
+   }
+
+   
 
 
         /* BONUS resources */
@@ -221,19 +233,35 @@ header>.second-nav{
 
 
         /* BONUS PARTNERS */
+.triangolo-partners{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: -0.6rem;
+    right: 6.2rem;
+    z-index: 2;
+    display: block;
+    transform: rotate(45deg);
+    border: 1px solid #c9d6e1;
+    border-right: none;
+    border-bottom: none;
 
-        .content-partners {
-            position: absolute;
-            right: 0;
-            top:2rem;
-            min-width: 45rem;
-            display: none;
-            z-index: 2;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            background-color: white;
-            border: 1px solid #c9d6e1;
-            border-radius: 5px;
-        }
+}
+
+.content-partners {
+    position: absolute;
+    right: -6.6rem;
+    top:2rem;
+    min-width: 45rem;
+    display: none;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    border: 1px solid #c9d6e1;
+    border-radius: 5px;
+  
+}
         
         .content-partners  .box-partners{
             float:left;
@@ -251,7 +279,7 @@ header>.second-nav{
         .content-partners ul{
             list-style: none;
         }
-        #partners:hover ~.content-partners {
+        .dropdown.partners:hover .content-partners {
             display: block;
           }
 
@@ -260,17 +288,33 @@ header>.second-nav{
 
 
         /* BONUS ABOUT        */
-    .content-about {
+div.triangolo-about{
+        width: 20px;
+        height: 20px;
+        background-color:white;
+        position:absolute;
+        top: -0.62rem;
+        right: 1.6rem;
+        z-index: 2;
+        display: block;
+        transform: rotate(45deg);
+        border: 1px solid #c9d6e1;
+        border-right: none;
+        border-bottom: none;
+        } 
+
+.content-about {
         position: absolute;
-        right: 0;
+        right: -2rem;
         top:2rem;
-        min-width: 20rem;
+        min-width: 30rem;
         display: none;
         z-index: 1;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         background-color: white;
         border: 1px solid #c9d6e1;
         border-radius: 5px;
+        
     }
 
     .content-about .box-about{
@@ -290,8 +334,8 @@ header>.second-nav{
     .content-about ul{
         list-style: none;
     }
-    
-#about:hover ~.content-about {
+
+.dropdown.about:hover .content-about{
         display: block;
     }
 
